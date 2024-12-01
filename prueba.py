@@ -17,14 +17,22 @@ print(f'Usar:{nombre} {apellido}, edad {edad}, nos visita desde: {ciudad}. ¡Ya 
 print('¿Qué deseas sumar?')
 
 #Función para realizar la suma
-def sumar(x, y):
-    return x + y 
+def sumar(x, y, z):
+    return x + y + z
+
+#Función para realizar la resta
+def restar(x, y, z):
+    return x - y - z
 
 #Solicitar al usuario que ingrese los datos
-numero1 = float(input('Introduce el primer número: '))
-numero2 = float(input('Introduce el segundo número: '))
+numero1 = int(input('Introduce el primer número: '))
+numero2 = int(input('Introduce el segundo número: '))
+numero3 = int(input('Introduce el tercer número: '))
 
 #Calcular la suma
-resultado = sumar(numero1, numero2)
+resultado = sumar(numero1, numero2, numero3)
+resultado2 = restar(numero1, numero2, numero3)
 #Mostrar el resultado
-print('Este es tu resultado: {resultado}')
+print(f'Este es tu resultado de sumar: {resultado}')
+print(f'Este es tu resultado de restar: {resultado2}')
+
