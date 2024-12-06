@@ -30,12 +30,14 @@ while notas != "fin":
         lista_notas.append(notas)
         cantidad_notas += 1
         suma += float(notas)
+    else: 
+        break
     
 promedio = suma / cantidad_notas
 
 if promedio >= 4:
     print("Aprobaste:)")
 else:
-    print("Cagaste Light")
+    print("Reprobaste:() ")
     
 print(f"El promedio es: {promedio}")
